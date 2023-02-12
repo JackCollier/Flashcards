@@ -62,6 +62,7 @@ nav {
     border-radius: 5px;
     font-family: inherit;
     border: 1px solid lightgray;
+    font-size: 1.2rem;
 }
 
 .create-box button {
@@ -115,10 +116,4 @@ nav {
     }
 }
 
-textarea {
-    font-size: 1.2rem;
-}
 
-.fade {
-    opacity: 0;
-}
