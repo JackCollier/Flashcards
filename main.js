@@ -1,7 +1,8 @@
-const flashcards = document.getElementsByClassName('flashcards')[0];
-const createBox = document.getElementsByClassName('create-box')[0];
-const question = document.getElementById('question');
-const answer = document.getElementById('answer');
+// Variable assignment 
+const flashcards = document.querySelector('.flashcards');
+const createBox = document.querySelector('.create-box');
+const question = document.querySelector('#question');
+const answer = document.querySelector('#answer');
 
 let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
