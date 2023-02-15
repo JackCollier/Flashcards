@@ -39,7 +39,8 @@ function divMaker(text) {
     flashcards.appendChild(div)
 }
 
-// Creates a new flashcard object based on the values in the question and answer input fields. The function adds the flashcard object to the contentArray array, saves the updated array to local storage, creates a new div element for the flashcard, and clears the input fields.
+/* Creates a new flashcard object based on the values in the question and answer input fields. The function adds the flashcard object to the contentArray array,
+ saves the updated array to local storage, creates a new div element for the flashcard, and clears the input fields. */ 
 function addFlashCard() {
     let flashcard_info = {
         'my_question': question.value,
