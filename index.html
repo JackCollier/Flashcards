@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Flashcards</title>
-</head>
+  </head>
 
-
-<body>
-
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <h1>Flashcards</h1>
-                <div>
-                    <button onclick="showCreateCardBox()">New Card</button>
-                    <button onclick="delFlashCards()">Delete Cards</button>
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav>
+          <h1>Flashcards</h1>
+          <div>
+            <button onclick="showCreateCardBox()">New Card</button>
+            <button onclick="delFlashCards()">Delete Cards</button>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="container">
-        <div class="create-box">
+      <div class="create-box">
+        <h2>Create Flashcards</h2>
+        <label for="question">Question</label>
+        <textarea id="question"></textarea>
 
-            <h2>Create Flashcards</h2>
-            <label for="question">Question</label>
-            <textarea  id="question"></textarea>
+        <br />
 
-            <br>
+        <label for="answer">Answer</label>
+        <textarea id="answer"></textarea>
 
-            <label for="answer">Answer</label>
-            <textarea  id="answer"></textarea>
-
-            <div>
-                <button onclick="addFlashCard()">Save</button>
-                <button onclick="hideCreateBox()">Close</button>
-            </div>
-            
+        <div>
+          <button onclick="addFlashCard()">Save</button>
+          <button onclick="hideCreateBox()">Close</button>
         </div>
+      </div>
 
-        <div class="flashcards">
-
-        </div>
-
+      <div class="flashcards"></div>
     </div>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
